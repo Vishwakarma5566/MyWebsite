@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightblue; /* Light blue background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3e5172; /* Changed header background color for better contrast */
+    color: #aad6ec;
+    height: 60px; /* Fix the header height */
+    flex-wrap: wrap; /* Allow the items to wrap */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.logo img {
+    height: 40px; /* Keep the logo height fixed */
+}
+
+.nartan-title {
+    font-size: 2em; /* Increased font size of Nartan */
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Ensure menu items wrap on smaller screens */
+}
+
+nav ul.left-menu {
+    margin-left: 20px; /* Adjust the margin as needed */
+    flex-wrap: wrap;
+}
+
+nav ul.right-menu {
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px; /* Adjust the spacing as needed */
+}
+
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Increased font size of menu items */
+}
+
+h1, h2, h3 {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    min-height: 350px;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    width: calc(60% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.modal-content .login-button,
+.modal-content .register-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.modal-content .login-button {
+    background-color: #444;
+}
+
+.modal-content .login-button:hover {
+    background-color: #555;
+}
+
+.modal-content .register-button {
+    background-color: #ff5722;
+}
+
+.modal-content .register-button:hover {
+    background-color: #e64a19;
+}
+
+.modal-content h2 {
+    padding-left: 10px;
+}
+
+.register-link {
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    color: #e64a19;
+}
+
+#reviews {
+    margin-top: 40px;
+}
+
+.review-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222; /* Darker color for more contrast */
+    color: #fff;
+    padding: 150px 20px; /* Increased padding to make footer larger */
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nartan-title {
+        font-size: 1.5em; /* Slightly smaller font size for mobile */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduced margin for mobile */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Slightly smaller font size for menu items on mobile */
+    }
+}

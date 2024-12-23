@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="./images/logo.png" alt="Website Logo">
+            <h1>Nartan</h1>
+        </div>
+        <div class="profile-container">
+            <img src="./images/user.png" alt="Profile Logo">
+            <button class="logout-button" onclick="handleLogout()">Logout</button>
+        </div>
+    </div>
+    
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Congratulations! You have successfully logged in.</p>
+    
+    <div class="box-container">
+        <div class="box">
+            <img src="./images/likes.png" alt="Item 1">
+            <p>Free Likes</p>
+            <div class="price-tag">$10.00</div>
+            <button class="buy-button" onclick="handleBuy('Item 1')">Buy</button>
+        </div>
+        <div class="box">
+            <img src="./images/views.png" alt="Item 2">
+            <p>Free Views</p>
+            <div class="price-tag">$20.00</div>
+            <button class="buy-button" onclick="handleBuy('Item 2')">Buy</button>
+        </div>
+        <div class="box">
+            <img src="./images/comments.png" alt="Item 3">
+            <p>Free Comments</p>
+            <div class="price-tag">$30.00</div>
+            <button class="buy-button" onclick="handleBuy('Item 3')">Buy</button>
+        </div>
+        <div class="box">
+            <img src="./images/subscribers.png" alt="Item 4">
+            <p>Free Subscribers</p>
+            <div class="price-tag">$40.00</div>
+            <button class="buy-button" onclick="handleBuy('Item 4')">Buy</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

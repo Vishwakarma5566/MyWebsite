@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #3e5172;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; /* Ensure the navbar starts at the left edge */
+    z-index: 1000;
+    height: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar h1 {
+    color: #aad6ec;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-right: 100px; /* Add margin from the right corner */
+}
+
+.profile-container img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logout-button {
+    background-color: #444;
+    color: #aaaaaa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 70px; /* Add margin to account for the fixed navbar */
+}
+
+.box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box img {
+    width: 80%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.box p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.price-tag {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
